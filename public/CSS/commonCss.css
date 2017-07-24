@@ -1,0 +1,13 @@
+.deleteItem {
+	float:left;
+}
+.deleteDiv
+{
+	margin-right: 10px;
+	cursor: pointer;
+	overflow: hidden;
+	float: left;
+}
+.main-li{
+	margin-bottom: 5px;
+}

@@ -2,6 +2,7 @@ var express = require('express')
 var app = express();
 
 var mongoose = require('mongoose');
+var bodyParser = require('body-parser');
 var config = require('./configuration/config');
 
 var route = require('./routes/genRoute')
@@ -10,6 +11,9 @@ mongoose.Promise = global.Promise;
 mongoose.connect(config.mongoconfig.database);
 
 app.use('/static',express.static('public'));
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json()); 
 
 app.use('/',route);
 
