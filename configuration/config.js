@@ -1,5 +1,5 @@
 module.exports = {
 	mongoconfig : {
-			'database': 'mongodb://localhost/winedb'
+			'database': 'mongodb://localhost/wineds'
 	},
 }
